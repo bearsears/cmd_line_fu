@@ -1,15 +1,19 @@
+Steven
+-------------------------------------------------------------------------
+
 curl wttr.in
     to find out the current weather in your location from the commond line.
     you can type wttr.in from you browser, 
-    add free.
+    advertisement free.
     curl wttr.in/city_name to know current weather in specific city
 
 curl ifconfig.me
-    to find out what your public address is afte NAT translation.
+    to find out what your public address is after NAT translation.
 
 cat /dev/urandom | hexdump -C | grep "ca fe"
     looks cool.
-    greate way to pretending to look busy 
+    great way to pretending to look busy 
+    I hope I can get a job where I can do this. Drink coffee and run this.
 
 watch -n 1 "netstat -tpanl | grep ESTABLISHED"
     monitor TCP opened connections
@@ -23,6 +27,13 @@ sed '4!d'
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
     this will list commands that you use often
 
+!!
+    repeats last command
+
+!n
+    repeats the nth command on the history 
+    really useful if the level is too deep, and you do not want to retype
+    
 nmap -sP 192.168.1.100-254
     pinging a range of ip addresses.
     i know fping works too but nmap just has so much options.
@@ -33,7 +44,3 @@ ping xxx.xxx.xxx.xxx size 1024 repeat 100
 ping -b 192.168.0.255
     ping all hosts on 192.168.1.0/24
     this command makes connections of what we learned. 
-
-
-
-
