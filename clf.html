@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Steven's command line fu</title>
+</head>
+<body>
+	<h1>Steven's command line fu</h1>
+	<hr>
+	<p>To find out the current weather in your location from the command line, use:</p>
+	<code>curl wttr.in</code>
+	<p>You can also type <code>wttr.in</code> in your browser for an advertisement-free version, or <code>curl wttr.in/city_name</code> to know the current weather in a specific city.</p>
+    <p><br></p>
+
+	<p>To find out what your public address is after NAT translation, use:</p>
+	<code>curl ifconfig.me</code>
+    <p><br></p>
+
+	<p>To print just line 4 from a text file, use:</p>
+	<code>awk "NR==4" filename</code><br>
+	<code>sed -n '4p' filename</code><br>
+	<code>sed '4!d' filename</code>
+    <p><br></p>
+
+	<p>To monitor TCP opened connections, use:</p>
+	<code>watch -n 1 "netstat -tpanl | grep ESTABLISHED"</code>
+    <p><br></p>
+
+	<p>To list commands that you use often, use:</p>
+	<code>history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head</code>
+    <p><br></p>
+
+	<p>To repeat the last command, use:</p>
+	<code>!!</code>
+    <p><br></p>
+
+	<p>To repeat the nth command on the history, use:</p>
+	<code>!n</code>
+    <p><br></p>
+
+	<p>To ping a range of IP addresses, use:</p>
+	<code>nmap -sP 192.168.1.100-254</code>
+    <p><br></p>
+
+	<p>To ping a certain address with size of 1024 bytes 100 times, use:</p>
+	<code>ping xxx.xxx.xxx.xxx size 1024 repeat 100</code>
+    <p><br></p>
+
+	<p>To ping all hosts on 192.168.1.0/24, use:</p>
+	<code>ping -b 192.168.0.255</code>
+	<p>This command makes connections of what we learned.</p>
+    <p><br></p>
+</body>
+</html>

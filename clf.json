@@ -1,0 +1,50 @@
+{
+    "commands": [
+        {
+            "description": "To find out the current weather in your location from the command line.",
+            "command": "curl wttr.in"
+        },
+        {
+            "description": "To know current weather in specific city",
+            "command": "curl wttr.in/city_name"
+        },
+        {
+            "description": "To find out what your public address is after NAT translation.",
+            "command": "curl ifconfig.me"
+        },
+        {
+            "description": "Print just line 4 from a textfile",
+            "command": "awk \"NR==4\" filename",
+            "command": "sed -n '4p' filename",
+            "command": "sed '4!d' filename"
+        },
+        {
+            "description": "Monitor TCP opened connections",
+            "command": "watch -n 1 \"netstat -tpanl | grep ESTABLISHED\""
+        },
+        {
+            "description": "This will list commands that you use often",
+            "command": "history | awk '{a[$2]++}END{for(i in a){print a[i] \" \" i}}' | sort -rn | head"
+        },
+        {
+            "description": "Repeats last command",
+            "command": "!!"
+        },
+        {
+            "description": "Repeats the nth command on the history",
+            "command": "!n"
+        },
+        {
+            "description": "Pinging a range of IP addresses.",
+            "command": "nmap -sP 192.168.1.100-254"
+        },
+        {
+            "description": "Ping a certain address with size of 1024 bytes 100 times.",
+            "command": "ping xxx.xxx.xxx.xxx size 1024 repeat 100"
+        },
+        {
+            "description": "Ping all hosts on 192.168.1.0/24. This command makes connections of what we learned.",
+            "command": "ping -b 192.168.0.255"
+        }
+    ]
+}
