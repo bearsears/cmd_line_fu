@@ -1,0 +1,10 @@
+awk
+    process and manipulate data and produce formatted reports
+
+Remove duplicate entries in a file without sorting.
+    awk '!x[$0]++' <file>
+
+   - Finds duplicates in a file without soring, which reorders the contents
+   - awk will not reorder the content, and still finds and removes duplicates which can be redirected into another file
+
+

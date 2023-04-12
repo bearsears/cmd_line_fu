@@ -1,0 +1,4 @@
+Make Kali Linux look less suspicious by making the desktop look more like a Windows machine
+    kali-undercover
+
+    - To revert back to Kali's original desktop, redo the same command with no options
