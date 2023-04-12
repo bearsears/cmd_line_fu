@@ -1,5 +1,0 @@
-netstat
-    generates displays that show network status and protocol statistics
-
-Show tcp connections sorted by Host / Most connections
-    netstat -ntu|awk '{print $5}'|cut -d: -f1 -s|sort|uniq -c|sort -nk1 -r
